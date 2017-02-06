@@ -41,6 +41,10 @@
     var app = angular.module('FileUtilities',[]);
     app.controller('fileUtilitiesCtrl',function ($scope) {
         $scope.elemento_base="henrique";
+        $scope.quebra_linnha="";
+        $scope.quebra_atributo="";
+        $scope.regra_saida="";
+        $scope.file="";
 
         $scope.processar = function () {
             alert("Processando");

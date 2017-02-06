@@ -20,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="216">
+              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -179,7 +179,7 @@
       <updated>1486406439843</updated>
       <workItem from="1486406441271" duration="3675000" />
       <workItem from="1486422927649" duration="91000" />
-      <workItem from="1486423019311" duration="1043000" />
+      <workItem from="1486423019311" duration="1214000" />
     </task>
     <task id="LOCAL-00001" summary="Html básico com leitura do arquivo, quebra de linhas e impressão no console.">
       <created>1486408544519</created>
@@ -192,7 +192,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4809000" />
+    <option name="totallyTimeSpent" value="4980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="24" width="1600" height="876" extended-state="6" />
@@ -274,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="216">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding />
         </state>
       </provider>

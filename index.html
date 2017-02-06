@@ -10,19 +10,21 @@
 
 </head>
 
-<body ng-app="FileUtilities">
+<body ng-app="FileUtilities" ng-controller="fileUtilitiesCtrl">
+{{ elemento_base }}
+
 <div class="row">
     <div class="col-lg-6">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input placeholder="Elemento base" id="elemento_base"> <br>
+            <input placeholder="Elemento base" id="elemento_base" ng-model="elemento_base"> <br>
 
         </div>
     </div><!-- /.col-lg-6 -->
     <div class="col-lg-6">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input placeholder="Elemento base" id="elemento_base"> <br>
+            <input placeholder="Elemento base" id="elemento_base" ng-model="elemento_base"> <br>
 
         </div>
     </div><!-- /.col-lg-6 -->
@@ -33,6 +35,18 @@
 <input placeholder="Quebra de Atributo" id="quebra_atributo"> <br>
 <textarea id="regra_saida" placeholder="regra de saida"></textarea> <br>
 <input id="file" type="file"> <br>
+<input type="submit" value="Processar" ng-click="processar()">
+
+<script>
+    var app = angular.module('FileUtilities',[]);
+    app.controller('fileUtilitiesCtrl',function ($scope) {
+        $scope.elemento_base="henrique";
+
+        $scope.processar = function () {
+            alert("Processando");
+        }
+    })
+</script>
 
 </body>
 

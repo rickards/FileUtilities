@@ -1,0 +1,20 @@
+{
+    id, nome, idade
+    1,allan,22
+    2,henrique,23
+}
+
+
+s_inicial= "{"
+s_final= "}"
+l_quebra = "\n"
+elemento = 1,allan,22
+abs_keys = A, B, C
+keys = id, nome, idade
+
+saida = "{
+     <id>.<nome>.<idade>:{
+           "nome":<nome>
+           "idade":<idade>
+         }
+}"

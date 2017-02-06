@@ -1,9 +1,11 @@
-<html>
+<html lang="pt-bt">
     <head>
 
     </head>
 
     <body>
+    <input placeholder="Expressão 1">
+    <input placeholder="Expressão 2">
     <input id="file" type="file">
     </body>
 
@@ -11,7 +13,7 @@
         document.getElementById('file').onchange = function(){
 
             var file = this.files[0];
-
+            console.log(file);
             var reader = new FileReader();
             reader.onload = function(progressEvent){
                 // Entire file
@@ -27,3 +29,18 @@
         };
     </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

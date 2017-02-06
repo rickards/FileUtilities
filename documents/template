@@ -7,7 +7,9 @@
 
 s_inicial= "{"
 s_final= "}"
-l_quebra = "\n"
+quebra_linha = "\n"
+quebra_atributo = ","
+
 elemento = 1,allan,22
 abs_keys = A, B, C
 keys = id, nome, idade

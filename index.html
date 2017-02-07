@@ -17,25 +17,26 @@
     <div class="col-lg-6">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input placeholder="Elemento base" id="elemento_base" ng-model="elemento_base"> <br>
-
+            <textarea name="message" class="form-control"  aria-describedby="basic-addon2">
+            </textarea>
         </div>
     </div><!-- /.col-lg-6 -->
     <div class="col-lg-6">
         <div class="input-group">
+            <input placeholder="Quebra de Linha" id="quebra_linnha"> <br>
+            <input placeholder="Quebra de Atributo" id="quebra_atributo"> <br>
+            <input type="submit" value="Processar" ng-click="processar()">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="input-group">
             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input placeholder="Elemento base" id="elemento_base" ng-model="elemento_base"> <br>
-
+            <textarea name="message" placeholder="regra de saida" class="form-control"  aria-describedby="basic-addon2">
+            </textarea>
         </div>
     </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 <input id="file" type="file">
-
-<input placeholder="Quebra de Linha" id="quebra_linnha"> <br>
-<input placeholder="Quebra de Atributo" id="quebra_atributo"> <br>
-<textarea id="regra_saida" placeholder="regra de saida"></textarea> <br>
-<input id="file" type="file"> <br>
-<input type="submit" value="Processar" ng-click="processar()">
 
 <script type="text/javascript" src="/FileUtilities/static/controller.js">
 

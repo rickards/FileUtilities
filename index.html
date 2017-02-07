@@ -11,36 +11,53 @@
 </head>
 
 <body ng-app="FileUtilities" ng-controller="fileUtilitiesCtrl">
-{{ elemento_base }}
 
-<div class="row">
-    <div class="col-lg-6">
-        <div class="input-group">
-            <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
-            <textarea name="message" class="form-control"  aria-describedby="basic-addon2">
-            </textarea>
+<div class="top">
+	<h1>FileUtilities</h1>
+	<div class="links">
+		by <a href="https://github.com/allanufal" target="_blank">Allan Lucio</a> e <a href="https://github.com/rickards" target="_blank">Henrique Alves</a><br>
+		<a href="https://github.com/rickards/FileUtilities" target="_blank">GitHub</a>
+	</div>
+</div>
+
+
+<div class"container">
+
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-text-height"></i></span>
+                <textarea name="input_message" placeholder="texto de entrada" class="form-control"  aria-describedby="basic-addon2" rows="30">
+                </textarea>
+            </div>
+        </div><!-- /.col-lg-6 <--></-->
+        <div class="col-lg-2">
+            <div class="input-group">
+                <input placeholder="Texto adicional anterior" id="text_added_before"> <br>
+                <input placeholder="Quebra de Linha" id="quebra_linnha"> <br>
+                <input placeholder="Quebra de Atributo" id="quebra_atributo"> <br>
+                <input placeholder="Texto adicional posterior" id="text_added_after"> <br>
+                <input type="submit" value="Processar" ng-click="processar()">
+            </div>
         </div>
-    </div><!-- /.col-lg-6 -->
-    <div class="col-lg-6">
-        <div class="input-group">
-            <input placeholder="Quebra de Linha" id="quebra_linnha"> <br>
-            <input placeholder="Quebra de Atributo" id="quebra_atributo"> <br>
-            <input type="submit" value="Processar" ng-click="processar()">
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="input-group">
-            <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-envelope"></i></span>
-            <textarea name="message" placeholder="regra de saida" class="form-control"  aria-describedby="basic-addon2">
-            </textarea>
-        </div>
-    </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+        <div class="col-lg-5">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-text-height"></i></span>
+                <textarea name="output_message" placeholder="texto de saida" class="form-control"  aria-describedby="basic-addon2" rows="30">
+                </textarea>
+            </div>
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+<h3>Apply in isolated file:</h3>
 <input id="file" type="file">
 
 <script type="text/javascript" src="/FileUtilities/static/controller.js">
 
 </script>
+
 </body>
 
 
